@@ -1,0 +1,32 @@
+/ {
+    macropad3x3_layout: macropad3x3_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "3x3 Macropad";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100    0  200       0     0     0>
+            , <&key_physical_attrs 100 100  100  200       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            ;
+    };
+
+    macropad3x3_position_map: macropad3x3_position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        complete;
+
+        twelve {
+            physical-layout = <&macropad3x3_layout>;
+            positions
+                = < 0  1  2>
+                , < 3  4  5>
+                , < 6  7  8>;
+        };
+    };
+};
