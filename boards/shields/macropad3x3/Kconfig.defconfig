@@ -1,0 +1,6 @@
+if SHIELD_MACROPAD3X3
+
+config ZMK_KEYBOARD_NAME
+    default "Macropad 3x3"
+
+endif
