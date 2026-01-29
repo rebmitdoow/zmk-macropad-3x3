@@ -1,3 +1,5 @@
+#include "macropad3x3.dtsi"
+
 / {
     chosen {
         zmk,kscan = &kscan0;
